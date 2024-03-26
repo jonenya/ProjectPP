@@ -52,21 +52,24 @@
                     <button><a href="" class="nav-link text-light bg-info my-1">View Products</a></button>
                     <button><a href="index.php?insert_category" class="nav-link text-light bg-info my-1">Insert Categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1"></a>View Categories</button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a>Insert Brands</button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a>View Brands</button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a>All orders</button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a>All payments</button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a>List users</button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a>Log out</button>
+                    <button><a href="index.php?insert_brand" class="nav-link text-light bg-info my-1">Insert Brands</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">View Brands</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">All orders</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">All payments</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">List users</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">Log out</a></button>
                 </div>
             </div>
         </div>
 
         <!--forth child-->
-         <div class="container">
+         <div class="container my-5">
             <?php
             if(isset($_GET['insert_category'])){
                 include('insert_categories.php');
+            }
+            if(isset($_GET['insert_brand'])){
+                include('insert_brands.php');
             }
             ?>
          </div>
